@@ -881,7 +881,7 @@ flowMediumWater = function() {
 				dpmax = dpmax1.toFixed(2);
 				dpmax2 = dpmax1.toFixed(3);
 				if(pmaxValAns == dpmax || pmaxValAns == dpmax2){
-					$("#main-div").screenTop(0);
+					$("#main-div").scrollTop(0);
 					alertify.alert("Answer is Correct");
 					
 					if(dpmax < deltap ){
@@ -904,7 +904,7 @@ flowMediumWater = function() {
 										
 					flag++;
 					if(flag == 3){
-						$("#main-div").screenTop(0);
+						$("#main-div").scrollTop(0);
 						alertify.alert("Answer is Incorrect");
 						alertify.alert("The correct answer is "+dpmax);
 						
@@ -922,7 +922,7 @@ flowMediumWater = function() {
 						flag = 0;
 						
 					}else{
-						$("#main-div").screenTop(0);
+						$("#main-div").scrollTop(0);
 						alertify.alert("Answer is Incorrect");
 					}
 					
@@ -930,7 +930,7 @@ flowMediumWater = function() {
 //				console.log(dpmax);
 			}else{
 				if(isNaN(pmaxValAns)){
-					$("#main-div").screenTop(0);
+					$("#main-div").scrollTop(0);
 					alertify.alert("Please enter the answer in numeric only ");
 				}
 
