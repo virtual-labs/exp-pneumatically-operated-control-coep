@@ -16,6 +16,10 @@ $(function () {
 //	    });
 	
 	
+
+
+
+	
 	$(".positionTypes").change(function() {
         // Get the selected value
         var selected = $("option:selected", $(this)).val();
@@ -23,9 +27,15 @@ $(function () {
         var thisID = $(this).attr("id");
         // Reset so all values are showing:
         
+		
+		
         $(".positionTypes").each(function() {
             if ($(this).attr("id") == thisID) {
             	selectCount++;
+				//alert($(this).attr("id"));
+				//var objId = $(this).attr("id");
+				//$("#"+objId).addClass("selected");
+				//$(this).attr("id").addClass("selected");
             }
         });
         
@@ -45,10 +55,12 @@ $(function () {
 	$("#identify").click(function(){
 		
 		if(selectCount != count){
-        	alertify.alert("Please select remaining elements");
-
         	
-        
+			if(selectCount > count){
+				setTimeout(function(){  location.reload(true);  }, 3000);
+			}else{
+				alertify.alert("Please select remaining elements");
+			}
         }else{
         	var idCount = 0;
         	for(key in validateJson){
@@ -69,7 +81,12 @@ $(function () {
 			
 			if(idCount == 9){
 				$("#next").prop("disabled", false);
+				
+			}else{
+				setTimeout(function(){  location.reload(true);  }, 3000);
 			}
+			
+			
         };
 			
 		
