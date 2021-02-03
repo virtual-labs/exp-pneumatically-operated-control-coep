@@ -1,0 +1,404 @@
+
+.modal.in .modal-dialog
+{width:70%;}
+#myModalN .width20
+{
+	text-align:center;
+	width:20%;
+}
+
+#myModalN .width10
+{
+	text-align:center;
+	width:10%;
+}
+
+#myModalN td {text-align: center;}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border: 1px solid #000;
+    font-size: 16px;
+    font-weight:bold;
+    text-align: center;
+}
+  .btn-default {
+    color: #fbf6f6;
+    font-size: 18px;
+    background-color: #337ab7;
+    border-color: #ccc;
+}
+.exptitle
+{
+	border-radius:10px;
+/*     font-family: 'Vollkorn', serif; */
+    font-size: 21px;
+	background-color:#fff;
+   border:1px solid #05938f;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+	        padding:10px 1%;
+}
+.title_par
+{
+border-radius:10px;
+/*     font-family: 'Vollkorn', serif; */
+    font-size: 20px;
+	color:#5b5b5c;
+	font-weight:bold;
+   background-color: #05938f;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+	        padding:10px 1%;	
+	        margin:27px 0;	
+	        color:#fff;
+}
+
+ #flowMediumWaterDiv , #flowMediumSuperheatedSteamDiv , #flowMediumLiquidPropaneDiv , #flowMediumNaturalGasDiv , #vlavePartsAssembleDiv
+{
+	border-radius:10px;
+/*     font-family: 'Vollkorn', serif; */
+    font-size: 20px;
+	color:#5b5b5c;
+   background-color: #fff;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+	        padding:10px 1%;
+	        margin:10px 0;
+	        border-left: 8px solid rgba(63,148,148, 0.1);
+	
+}
+
+
+
+#flowMedium, #flowMediumWaterDiv , #flowMediumSuperheatedSteamDiv , #flowMediumLiquidPropaneDiv , #flowMediumNaturalGasDiv select
+{color: #525252;
+font-size: 15px;
+/* font-weight: bold; */
+letter-spacing: 1px;
+border: 1px solid #05938f;
+margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#flowMedium, #flowMediumWaterDiv , #flowMediumSuperheatedSteamDiv , #flowMediumLiquidPropaneDiv , #flowMediumNaturalGasDiv option
+{color: #525252;
+font-size: 15px;
+/* font-weight: bold; */
+letter-spacing: 1px;
+}
+
+#flowMediumWaterDiv section{
+	border-left: 8px solid rgba(63,148,148, 0.3);
+margin: 5px 0 20px 0;
+padding-left: 15px;
+font-weight: normal;
+color: #272525;
+font-family: Cambria, Georgia, serif;}
+
+#flowMediumSuperheatedSteamDiv section{
+	border-left: 8px solid rgba(63,148,148, 0.3);
+margin: 5px 0 20px 0;
+padding-left: 15px;
+font-weight: normal;
+color: #272525;
+font-family: Cambria, Georgia, serif;}
+
+#flowMediumLiquidPropaneDiv section{
+	border-left: 8px solid rgba(63,148,148, 0.3);
+margin: 5px 0 20px 0;
+padding-left: 15px;
+font-weight: normal;
+color: #272525;
+font-family: Cambria, Georgia, serif;}
+
+#flowMediumNaturalGasDiv section{
+	border-left: 8px solid rgba(63,148,148, 0.3);
+margin: 5px 0 20px 0;
+padding-left: 15px;
+font-weight: normal;
+color: #272525;
+font-family: Cambria, Georgia, serif;}
+
+ #nextLevel4
+{padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #05938f;
+    margin: 20px 10px;;
+    letter-spacing:1px;
+    font-weight: bold;
+    box-shadow: 0 5px #999;}
+  
+  #nextLevel4:active{
+  background-color: #05aaa5;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}   
+ label  {
+/* 	font-family: 'Roboto', sans-serif; */
+	font-size: 20px;
+	font-weight: bold;
+	color:#398080;
+}
+
+
+input{
+height: 25px;
+margin: 5px 5px 5px 0;
+border: 1px solid #666;
+
+}
+#flowMediumWaterDiv span
+{ color: #2f2d2d;
+font-size: 17px;
+/* font-weight: bold; */
+letter-spacing: 1px;
+font-family: Cambria, Georgia, serif;
+} 
+/* #flowMediumWaterDiv .inside-col */
+/* {margin-bottom: 10px;  */
+/* padding-top:10px; */
+/* border:1px solid #e1e0df; */
+/* } */
+
+
+#flowMediumSuperheatedSteamDiv span
+{ color: #2f2d2d;
+font-size: 17px;
+/* font-weight: bold; */
+letter-spacing: 1px;
+font-family: Cambria, Georgia, serif;
+} 
+
+
+#flowMediumLiquidPropaneDiv span
+{ color: #2f2d2d;
+font-size: 17px;
+/* font-weight: bold; */
+letter-spacing: 1px;
+font-family: Cambria, Georgia, serif;
+} 
+
+
+#flowMediumNaturalGasDiv span
+{ color: #2f2d2d;
+font-size: 17px;
+/* font-weight: bold; */
+font-family: Cambria, Georgia, serif;
+letter-spacing: 1px;
+} 
+
+#flowMediumWaterDiv h2 {
+   background:#8c9090;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:20px;
+ letter-spacing:1px;
+ font-weight: bold;
+ color:#fff;
+ font-family: Cambria, Georgia, serif;
+ }
+ 
+ #flowMediumSuperheatedSteamDiv h2 {
+   background:#8c9090;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:20px;
+ letter-spacing:1px;
+ font-weight: bold;
+ color:#fff;
+ font-family: Cambria, Georgia, serif;
+ }
+ #flowMediumLiquidPropaneDiv h2 {
+   background:#8c9090;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:20px;
+ letter-spacing:1px;
+ font-weight: bold;
+ color:#fff;
+ font-family: Cambria, Georgia, serif;
+ }
+ #flowMediumNaturalGasDiv h2 {
+   background:#8c9090;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:20px;
+ letter-spacing:1px;
+ font-weight: bold;
+ color:#fff;
+ font-family: Cambria, Georgia, serif;
+ }
+ 
+ #vlavePartsAssembleDiv h2 {
+   background:#8c9090;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:20px;
+ letter-spacing:1px;
+ font-weight: bold;
+ color:#fff;
+ font-family: Cambria, Georgia, serif;
+ }
+ 
+ #vlavePartsAssembleDiv p {
+   color:#d00d0d;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:18px;
+ letter-spacing:1px;
+ font-weight: bold;
+ 
+ font-family: Cambria, Georgia, serif;
+ }
+input{
+height: 25px;
+margin: 5px 5px 5px 0;
+border: 1px solid #666;
+font-family: Cambria, Georgia, serif;
+
+}
+
+.btn-style{padding: 10px;
+color: #fff;
+font-size: 17px;
+border-radius: 10px;
+background-color: #05938f;
+margin: 10px 10px;
+letter-spacing: 1px;
+font-weight: bold;
+font-family: Cambria, Georgia, serif;
+    }
+
+.BgForAll
+{ background-color:rgba(0,0,0,.075);
+margin:10px auto;
+padding:5px 10px;
+border-top: 1px solid #cacacb;
+border-bottom: 1px solid #cacacb;
+font-family: Cambria, Georgia, serif;
+}
+
+legend {
+font-family: Cambria, Georgia, serif;
+	font-size: 20px;
+	font-weight:bold ;
+	color:#398080;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #398080;
+}
+
+
+select {
+font-family: Cambria, Georgia, serif;
+	font-size: 15px;
+	font-weight: inherit;
+	color:#5b5b5c;
+	margin-bottom: 15px;
+	border:1px solid #666;
+	 margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Level5Design{
+	border:1px solid #05938f;
+	width: 100%;
+	height:auto;
+	padding:10px;
+	background-color: #fff;
+   font-family: Cambria, Georgia, serif;
+}
+#Level5Design h1{background: #05938f;
+padding: 14px 15px;
+margin: 30px 0;
+font-size: 19px;
+letter-spacing: 1px;
+font-weight: bold;
+color: #fff;
+font-family: Cambria, Georgia, serif;}
+
+#Level5Design h2 {
+   background:#8c9090;
+ padding: 9px 15px;
+ margin:10px 0;
+ font-size:18px;
+ letter-spacing:1px;
+ font-weight: bold;
+ color:#fff;
+ font-family: Cambria, Georgia, serif;
+ }
+#Level5Design section{
+	border-left: 8px solid rgba(63,148,148, 0.3);
+margin: 5px 0 20px 0;
+padding-left: 15px;
+font-weight: normal;
+color: #272525;
+font-family: Cambria, Georgia, serif;}
+
+#Level5Design span{
+font-size: 17px;
+padding-left: 15px;
+font-weight: normal;
+color: #272525;
+font-family: Cambria, Georgia, serif;}
+
+#dpValBtn ,#dpfValBtn
+{
+	padding: 10px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #05938f;
+    margin: 20px 10px;
+    letter-spacing:1px;
+    font-weight: bold;
+   
+}
+#Level5Design #nextLevel6
+ { padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #05938f;
+    margin: 20px 10px;
+    letter-spacing:1px;
+    font-weight: bold;
+    box-shadow: 0 5px #999;}
+    
+  #Level5Design   #nextLevel6:hover {background-color: #05aaa5}
+
+ #Level5Design #nextLevel6:active{
+  background-color: #05aaa5;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+#Level4Assemble #nextLevel5 
+ { padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #05938f;
+    margin: 20px 10px;
+    letter-spacing:1px;
+    font-weight: bold;
+    box-shadow: 0 5px #999;}
+    
+  #Level4Assemble   #nextLevel5:hover {background-color: #05aaa5}
+
+ #Level4Assemble #nextLevel5:active{
+  background-color: #05aaa5;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

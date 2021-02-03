@@ -89,21 +89,55 @@
 
 
      const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "When a control valve is installed in a process with where the differential pressure (drop) across the valve decreases with increasing flow, the best trim characteristic to choose for the valve would be:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "Equal percentage", ///// Write the option 1 inside double quotes
+                b: "Anti-cavitation", ///// Write the option 2 inside double quotes
+				c: "Ported",
+				d: "Quick-opening"
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "Calculate the necessary Cv rating for a liquid service control valve, given a pressure drop of 24 PSID, a specific gravity of 1.3, and a maximum flow rate of 140 GPM. Assume there will be no flashing or choked flow through the valve.",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
+        a: "0.1319",                  ///// Write the option 1 inside double quotes
+        b: "601.5",                  ///// Write the option 2 inside double quotes
+        c: "32.58",      
+		d: "7.583"
+		},
       correctAnswer: "c"                ///// Write the correct option inside double quotes
+    },
+	{
+      question: "The main purpose of a control valve positioner is to:",  ///// Write the question inside double quotes
+      answers: {
+        a: "Improve the precision of the valve",                  ///// Write the option 1 inside double quotes
+        b: "Alter the characterization of the valve",                  ///// Write the option 2 inside double quotes
+        c: "Alter the fail-safe status of the valve",      
+		d: "Increase transmitter accuracy"
+		},
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
+    },
+	{
+      question: "The purpose of valve packing is to:",  ///// Write the question inside double quotes
+      answers: {
+        a: "Cushion the valve against harm during shipment",                  ///// Write the option 1 inside double quotes
+        b: "Seal process fluid from escaping past the stem",                  ///// Write the option 2 inside double quotes
+        c: "Lubricate the valve trim",      
+		d: "Help reduce cavitation in the valve trim"
+		},
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
+	{
+      question: "The definition of split range control valves implies that they are . . .",  ///// Write the question inside double quotes
+      answers: {
+        a: "easily re-ranged for different characteristics.",                  ///// Write the option 1 inside double quotes
+        b: "equipped with quick-acting positioners.",                  ///// Write the option 2 inside double quotes
+        c: "only used in sets of three.",      
+		d: "calibrated with complementary ranges."
+		},
+      correctAnswer: "d"                ///// Write the correct option inside double quotes
     },
 
 

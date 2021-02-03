@@ -89,23 +89,56 @@
 
 
     const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "The internal elements of a valve are collectively referred to as a valve's .", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "works ", ///// Write the option 1 inside double quotes
+                b: "trim", ///// Write the option 2 inside double quotes
+				c: "guts",
+				d: "packings"
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "b" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "The manually operated handwheel, manual lever, motor operator, solenoid operator, pneumatic operator, or hydraulic ram are all examples of",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "an actuator",                  ///// Write the option 1 inside double quotes
+        b: "a bonnet",                  ///// Write the option 2 inside double quotes
+        c: "a yoke",      
+		d: "a stem"
+		},
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
-
+	{
+            question: "Which one of the following valve parts is NOT usually considered to be a part of the pressure boundary.", ///// Write the question inside double quotes
+            answers: {
+                a: "body", ///// Write the option 1 inside double quotes
+                b: "disk", ///// Write the option 2 inside double quotes
+				c: "bonnet",
+				d: "seal rings"
+            },
+            correctAnswer: "d" ///// Write the correct option inside double quotes
+        },
+		{
+            question: "Most valves use___________to prevent leakage from the space between the stem and the bonnet.", ///// Write the question inside double quotes
+            answers: {
+                a: "a liquid seal", ///// Write the option 1 inside double quotes
+                b: "o-rings", ///// Write the option 2 inside double quotes
+				c: "packing",
+				d: "a metal to metal seal"
+            },
+            correctAnswer: "c" ///// Write the correct option inside double quotes
+        },
+		{
+            question: "Which of the following types of valve uses a flow control element that involves sliding a flat, cylindrical, or spherical surface across an orifice?", ///// Write the question inside double quotes
+            answers: {
+                a: "globe and needle valves", ///// Write the option 1 inside double quotes
+                b: "butterfly and diaphragm valves", ///// Write the option 2 inside double quotes
+				c: "globe and gate valves",
+				d: "gate and plug valves"
+            },
+            correctAnswer: "d" ///// Write the correct option inside double quotes
+        },
 
         
     ];
