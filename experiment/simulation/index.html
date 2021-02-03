@@ -1,13 +1,601 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Control Valve</title>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+<!--         <link rel="stylesheet" href="assert/css/jquery-ui-1.8.20.custom.css"> -->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+
+<!-- JavaScript for alert -->
+<script src="js/lib/alertify/alertify.min.js"></script>
+
+<!-- CSS for alert -->
+<link rel="stylesheet" href="js/lib/alertify/alertify.min.css"/>
+<!-- Default theme for alert -->
+<link rel="stylesheet" href="js/lib/alertify/default.min.css"/>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  
+         <link rel="stylesheet" href="css/assert/css/jquery-ui.css">
+        <link href="css/assert/css/ActuatorMotionCSS.css" rel="stylesheet" type="text/css">
+         <link href="css/assert/css/modeltables.css" rel="stylesheet" type="text/css">
+         <link href="css/assert/css/animate.css" rel="stylesheet" type="text/css">
+         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+<!--          <link rel="stylesheet" type="text/css" href="assert/css/tab.css" /> -->
+		
+	<style>
+	
+	
+	
+/* 	#plug{ */
+/* 	padding:0 10px; */
+/* 	width:; */
+/* 	border: 1px solid #000; */
+/* 	} */
+
+header {
+	border: 1px solid;
+	height: 120px;
+	width: 100%;
+	padding: 0 5%;
+	background: #2f7875;
+}
+
+footer {
+	border: 1px solid #666;
+	height: 30px;
+	width: 100%;
+	background: #2f7875;
+	bottom: 0px;
+}
+
+header img {
+	padding: 1px;
+	border-radius: 68px;
+	vertical-align: middle;
+	width: 120px;
+	height: 117px;
+	background: bisque;
+	float: left;
+	margin-right: 30px;
+}
+
+header h1 {
+	font-family: Cambria, Georgia, serif;
+	color: #fff;
+	font-size: 30px;
+	margin: 20px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+header h2 {
+	font-family: Cambria, Georgia, serif;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+	 #main-div {
+ 	width: 90%;
+ 	height: auto; 
+ 	margin: 10px 5%; 
+ 	border: 3px solid #666; 
+ 	/* 		background-color:#ededf1; */ 
+ 	background-image: url("images/bg.jpg"); 
+ 	font-family: Cambria, Georgia, serif; 
+ 	padding: 20px 1%; 
+ } 
+	.diagram{
+	background-color:#fff;
+	padding:10px;
+	width:350px;
+	margin:10px 5px;
+	float:left;
+	height:auto;
+	border:4px solid #a7a7a7;
+	border-radius:5px;
+	}
+	@media screen and (min-width:401px ) and (max-width: 468px) { 
+	.diagram{
+	 
+	margin:10px 25px;
+	
+	}
+	}
+	@media screen and (min-width:721px ) and (max-width: 768px) { 
+	.diagram{
+	 
+	margin:10px 0px;
+	
+	}
+	}
+	@media screen and (min-width:1100px ) and (max-width: 1260px) { 
+	.diagram{
+	 
+	margin:10px 2px;
+	
+	}
+	}
+	@media screen and (min-width:1260px ) and (max-width: 1300px) { 
+	.diagram{
+	 
+	margin:10px 10px;
+	
+	}
+	}
+	@media screen and (min-width:1301px ) and (max-width: 1400px) { 
+	.diagram{
+	 
+	margin:10px 14px;
+	
+	}
+	}
+	@media screen and (min-width:1401px ) and (max-width: 1500px) { 
+	.diagram{
+	 
+	margin:10px 25px;
+	
+	}
+	}
+	@media screen and (min-width:1601px ) and (max-width: 1650px) { 
+	.diagram{
+	 
+	margin:10px 10px;
+	
+	}
+	}
+	@media screen and (min-width:1650px ) and (max-width: 1750px) { 
+	.diagram{
+	 
+	margin:10px 23px;
+	
+	}
+	}
+	@media screen and (min-width:1751px ) and (max-width: 1761px) { 
+	.diagram{
+	 
+	margin:10px 23px;
+	
+	}
+	}
+	@media screen and (min-width:1762px ) and (max-width: 1813px) { 
+	.diagram{
+	 
+	margin:10px 40px;
+	
+	}
+	}
+	@media screen and (min-width: 1813px) and (max-width: 1925px) { 
+	.diagram{
+	 
+	margin:10px 5px;
+	
+	}
+	
+	}
+	
+	@media screen and (min-width: 1925px) and (max-width: 1900px) { 
+	.diagram{
+	 
+	margin:10px 7px;
+	
+	}
+	
+	}
+	@media screen and (min-width: 1900px) and (max-width: 2000px) { 
+	.diagram{
+	 
+	margin:10px 10px;
+	
+	}
+	
+	}
+	@media screen and (min-width: 2000px) and (max-width: 25000px) { 
+	.diagram{
+	 
+	margin:10px 6px;
+	
+	}
+	
+	}
+	.glyphicon-ok
+	{ color:#21c505;}
+	
+	 .glyphicon-remove
+	{ color:#f72806;}
+	
+	.success{
+	border:2px #75b76a  solid; 
+	}
+	
+	.danger{
+	border:2px  #b7756a solid; 
+	}
+	
+	</style>	
+		
+		
+	</head>
+	<body style="margin: 0; padding: 0;">
+		
+	<header> <img src='images/COEPlogo.png'/> <h1>COLLEGE OF ENGINEERING, PUNE</h1><h2><i>Identify The Components of Control Valve </i></h2></header>
+	
+	<div id="main-div" class="main-div" >
+	
+	<div class="container-fluid" >
+	<div class="row" id="wrapper">
+			
+			<div id="PositionerStem" class="diagram " >
+			
+			<select style="width:80%; margin:0 10%;" id="PositionerStem"  class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+		<option value="Actuator">Actuator & Actuator Stem</option>
+			  
+			</select>
+			</div>
+			
+			<div id="ValveBody" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;"  id="ValveBody" class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+			<option value="Actuator">Actuator & Actuator Stem</option>
+			</select>
+			</div>
+			<div id="Bonnet" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="Bonnet"  class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+			<option value="Actuator">Actuator & Actuator Stem</option>
+			</select>
+			</div>
+		
+			<div id="Spring" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="Spring" class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+		<option value="Actuator">Actuator & Actuator Stem</option>
+			  
+			</select>
+			</div>
+			
+			
+			<div id="plug" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="plug" class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+			<option value="Actuator">Actuator & Actuator Stem</option>
+			  
+			</select>
+			</div>
+			
+			
+			<div id="seatedRing" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="seatedRing" class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+			 <option value="Actuator">Actuator & Actuator Stem</option>
+			  
+			</select>
+			</div>
+			<div id="Indicatorplate" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="Indicatorplate" class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+			   <option value="Actuator">Actuator & Actuator Stem</option>
+			</select>
+			</div>
+			
+			
+			<div id="gradelPlate" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="gradelPlate"   class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+<!-- 			   <option value="Actuator">Actuator</option> -->
+			<option value="Actuator">Actuator & Actuator Stem</option>
+			  
+			</select>
+			</div>
+					
+					
+			<div id="Actuator" class="diagram">
+			
+			<select style="width:80%; margin:0 10%;" id="Actuator" class="form-control positionTypes">
+			<option value="0">select option</option>
+			  <option value="PositionerStem">Positioner Stem</option>
+			  <option value="ValveBody">Valve Body</option>
+			  <option value="Bonnet">Bonnet</option>
+			  <option value="Spring">Spring</option>
+			  <option value="plug">Plug</option>
+			  <option value="seatedRing">Seat Ring</option>
+			  <option value="Indicatorplate">Indicator plate</option>
+			  <option value="gradelPlate">Gland Packing</option>
+			   <option value="Actuator">Actuator & Actuator Stem</option>
+<!-- 			   <option value="ActuatorStem">Actuator & Actuator Stem</option> -->
+			  
+			</select>
+			</div>		
+		
+<!-- 		   <div id="ActuatorStem" class="diagram"> -->
+			
+<!-- 			<select style="width:80%; margin:0 10%;" id="ActuatorStem" class="form-control positionTypes" id="selectValue"> -->
+<!-- 			<option value="0">select option</option> -->
+			
+<!-- 			  <option value="PositionerStem">Positioner Stem</option> -->
+<!-- 			  <option value="ValveBody">Valve Body</option> -->
+<!-- 			  <option value="Bonnet">Bonnet</option> -->
+<!-- 			  <option value="Spring">Spring</option> -->
+<!-- 			  <option value="plug">Plug</option> -->
+<!-- 			  <option value="seatedRing">Seated Ring</option> -->
+<!-- 			  <option value="Indicatorplate">Indicator plate</option> -->
+<!-- 			  <option value="gradelPlate">Gland Packing</option> -->
+<!-- <!-- 			   <option value="Actuator">Actuator</option> --> 
+<!-- 			   <option value="ActuatorStem">Actuator & Actuator Stem</option> -->
+			  
+<!-- 			</select> -->
+<!-- 			</div>		 -->
+		
+		</div>
+		</div>
+	
+	 					<div class="buttonDiv">
+							<button id="identify">Identify</button>
+							<button id="reset">Reset</button>
+							<button id="next" disabled>Next</button>
+						</div>
+	
+	</div>
+	
+	
+<!-- 	<div id="main-div" style=""> -->
+	
+	
+	
+<!-- 		<div id="diagram" -->
+<!-- 			style="overflow: hidden; left: 50px; height: auto; width: 100%;"> -->
+<!-- 			<div class="container-fluid"> -->
+<!-- 				<div class="row"> -->
+
+<!-- 					<div id="dvSource" class="col-lg-2 col-md-2" style=""> -->
+<!-- 						<h1 class="dvSource">Library</h1> -->
+
+<!-- 						<div id="BodyValve" class=""> -->
+<!-- 							<img src="images/BodyValve.jpg" id="DragBodyValveImg" -->
+<!-- 								class="sourceImg1 acceptAnything "> -->
+<!-- 						</div> -->
+<!-- 						<div id="Stem"> -->
+<!-- 							<img src="images/stem.jpg" id="DragStemImg" -->
+<!-- 								class="sourceImg2 acceptAnything"> -->
+<!-- 						</div> -->
+<!-- 						<div id="Plug"> -->
+<!-- 							<img src="images/Plug.jpg" id="DragPlugImg" -->
+<!-- 								class="sourceImg1 acceptAnything"> -->
+<!-- 						</div> -->
+<!-- 						<div id="SeatedRing"> -->
+<!-- 							<img src="images/SeatedRing.jpg" id="DragSeatedRingImg" -->
+<!-- 								class="sourceImg1 acceptAnything"> -->
+<!-- 						</div> -->
+<!-- 						<div id="GlandPackingSet"> -->
+<!-- 							<img src="images/GlandPackingSet.jpg" -->
+<!-- 								class="sourceImg1 acceptAnything" id="DragGlandPackingSetImg"> -->
+<!-- 						</div> -->
+<!-- 						<div id="Bonnet"> -->
+<!-- 							<img src="images/Bonnet.jpg" id="DragBonnetImg" -->
+<!-- 								class="sourceImg1 acceptAnything"> -->
+<!-- 						</div> -->
+<!-- 						<div id="DiaphragmActuator"> -->
+<!-- 							<img src="images/diaphragmActuator.jpg" -->
+<!-- 								id="DragDiaphragmActuatorImg" class="sourceImg1 acceptAnything"> -->
+<!-- 						</div> -->
+<!-- 						<div id="IndicaterPlate"> -->
+<!-- 							<img src="images/IndicaterPlate.jpg" id="DragIndicaterPlateImg" -->
+<!-- 								class="sourceImg1 acceptAnything"> -->
+<!-- 						</div> -->
+
+
+
+<!-- 					</div> -->
+
+<!-- 					<div id="dvDest" class="col-lg-10 col-md-10" style=""> -->
+<!-- 						<div id="rowDiv" class="row"> -->
+
+<!-- 							<div id="DropBodyValve" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragBodyValveImg"> -->
+<!-- 								<div class="idbname">Valve Body</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropBonnet" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragBonnetImg"> -->
+<!-- 								<div class="idbname">Bonnet</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropDiaphragmActuator" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragDiaphragmActuatorImg"> -->
+<!-- 								<div class="idbname">Diaphragm Actuator</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropGlandPackingSet" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragGlandPackingSetImg"> -->
+<!-- 								<div class="idbname">Gland Packing Set</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropIndicaterPlate" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragIndicaterPlateImg"> -->
+<!-- 								<div class="idbname">Indicater Plate</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropPlug" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragPlugImg"> -->
+<!-- 								<div class="idbname">Plug</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropSeatedRing" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragSeatedRingImg"> -->
+<!-- 								<div class="idbname">Seated Ring</div> -->
+<!-- 							</div> -->
+<!-- 							<div id="DropStem" class="col-lg-3 col-md-4 img" -->
+<!-- 								name="DragStemImg"> -->
+<!-- 								<div class="idbname">Stem</div> -->
+<!-- 							</div> -->
+
+<!-- 						</div> -->
+<!-- 						<div class="buttonDiv"> -->
+<!-- 							<button id="identify">Identify</button> -->
+<!-- 							<button id="reset">Reset</button> -->
+<!-- 							<button id="next">Next</button> -->
+<!-- 						</div> -->
+
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+		
+		
+<!-- 	</div> -->
+
+
 </body>
+
+
+<!-- 	  <script type="text/javascript" src="assert/lib/jquery-1.7.js"></script> -->
+<!-- 		<script type="text/javascript" src="assert/lib/jquery-1.7.min.js"></script> -->
+<!-- <script type="text/javascript" src="src/modernizr.custom.04022.js"></script> -->
+	
+	      <script type="text/javascript" src="css/assert/lib/raphael.min.js"></script>
+		  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+
+		  <script type="text/javascript" src="css/assert/lib/jquery-ui.min.js"></script>
+	
+          <script src="css/assert/lib/bootstrap.min.js"></script>
+      
+<!-- 	      <script type="text/javascript" src="src/DirectActingValveStep1.js"></script> -->
+	
+	      <script type="text/javascript" src="js/src/ActuatorMotion2.js"></script>
+	
+	      <script type="text/javascript" src="js/src/WaterFlowJSONS.js"></script>
+	      <script type="text/javascript" src="js/src/SteamFlowJSONS.js"></script>
+	      <script type="text/javascript" src="js/src/NaturalGasJSONS.js"></script>
+	      <script type="text/javascript" src="js/src/LiquidFlowJSONS.js"></script>
+	      <script type="text/javascript" src="js/src/TerminologiesQuestionJSONS.js"></script>
+	      <script type="text/javascript" src="js/src/DesignControlValveJSONS.js"></script>
+	      
+	      
+	       
+	      <script type="text/javascript" src="js/src/Level_1.js"></script>  
+	      <script type="text/javascript" src="js/src/Level_2.js"></script>    
+	      <script type="text/javascript" src="js/src/Level_3.js"></script>
+	      <script type="text/javascript" src="js/src/Level_4.js"></script>
+	      <script type="text/javascript" src="js/src/Level_5.js"></script>
+	      <script type="text/javascript" src="js/src/Level_6.js"></script>
+	       
+	    
+	       
+		  <script type="text/javascript" src="js/src/RoundedPlugActuatorMotion.js"></script>
+	 
+		  <script type="text/javascript" src="js/src/FlowMediumWater.js"></script>
+		  <script type="text/javascript" src="js/src/FlowMediumSaturatedSteam.js"></script>  
+		  <script type="text/javascript" src="js/src/FlowMediumNaturalGas.js"></script>  
+		  <script type="text/javascript" src="js/src/FlowMediumLiquidPropane.js"></script> 
+		  
+		  	<script >
+	identifyValve();
+	</script>
+	
+	<script>
+
+// 	$('.ajs-header').html('');
+// 	$('.ajs-header').append("<div>Alert</div>");
+	
+
+	    $(document).ready(function() {
+	        $('#reset').click(function () {
+	            location.reload(true); 
+// 	        	 $('#main-div').load('#main-div'));
+	        });   
+	    });
+	</script>
+	<script>
+ 	$(function () {
+	    var parent = $("#wrapper");
+	    var divs = parent.children();
+ 	    while (divs.length) {
+ 	        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+ 	    }
+ 	});	
+
+	</script>
 </html>
