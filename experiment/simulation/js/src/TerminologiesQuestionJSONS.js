@@ -15,10 +15,10 @@ terminologiesQuestionsJSON = {
 						"content": "Sensitivity"
 					}, {
 						"ANSID": false,
-						"content": "Hysterisis"
+						"content": "Hysteresis"
 					},{
 						"ANSID": true,
-						"content": "Rengeability"
+						"content": "Rangeability"
 					}]
 				}]
 			}, {
@@ -57,7 +57,7 @@ terminologiesQuestionsJSON = {
 						"content": "Hysteresis"
 					}, {
 						"ANSID": false,
-						"content": "Rengeability"
+						"content": "Rangeability"
 					}]
 					
 				}]
@@ -160,7 +160,7 @@ terminologiesQuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Which of the following control valve component comprises diaphagm, spring and stem inside it.",
+					"QC": "Which of the following control valve component comprises diaphragm, spring and stem inside it.",
 					"ANS": [ {
 						"ANSID": false,
 						"content": "Bonnet"
@@ -206,7 +206,7 @@ terminologiesQuestionsJSON = {
 
 var ANSWERJSON = {
 			
-				"0" : "Rengeability",
+				"0" : "Rangeability",
 				"1" : "Cv",
 				"2"	: "Hysteresis",
 				"3" : "Bonnet",
