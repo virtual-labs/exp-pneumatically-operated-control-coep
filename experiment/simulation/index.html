@@ -584,7 +584,13 @@ header h2 {
 
 // 	$('.ajs-header').html('');
 // 	$('.ajs-header').append("<div>Alert</div>");
-	
+	alertify.alert || alertify.dialog('alert',function(){
+return {
+main:function(content){
+this.setContent(content);
+}
+};
+});
 
 	    $(document).ready(function() {
 	        $('#reset').click(function () {
