@@ -1,6 +1,12 @@
 // JavaScript Document
 $(function () {
-	
+			alertify.alert || alertify.dialog('alert',function(){
+				return {
+				main:function(content){
+				this.setContent(content);
+				}
+				};
+			});
 	
 	$("#next").click(function(){
 		 $("header").html("<img src='images/COEPlogo.png'/> <h1>COLLEGE OF ENGINEERING, PUNE</h1><h2><i>Questions On Control Valve </i></h2>");
@@ -76,7 +82,7 @@ $(function () {
 										
 										if (myRadio == null) {
 											flag = flag && false;
-											alertify.alert('Please atttempt all the questions');
+											alertify.alert('Please atttempt all the questions.');
 											break;
 										}else{
 											arr.push({
