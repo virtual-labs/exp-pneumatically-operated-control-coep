@@ -1,3 +1,4 @@
+ 
 # This workflow is used to build the experiment and push it to github pages
 
 name: Deploy Testing Branch
@@ -17,10 +18,11 @@ jobs:
             node-version: '12'
             check-latest: true
     - run: |
-        git clone -b pipeline-new https://github.com/virtual-labs/ph3-lab-mgmt
+        git clone https://github.com/virtual-labs/ph3-lab-mgmt
         cd ph3-lab-mgmt
         npm install
         node exp.js
+        
         cd ../
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
