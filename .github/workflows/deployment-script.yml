@@ -22,6 +22,7 @@ jobs:
         cd ph3-lab-mgmt
         npm install
         node exp.js
+        
         cd ../
         git config --local user.email "admin@vlabs.ac.in"
         git config --local user.name "vleadadmin"
