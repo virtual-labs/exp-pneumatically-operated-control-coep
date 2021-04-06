@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css" />
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css" />
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+    <header class="vlabs-header sticky-top bg-white">
+      <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+        
+        <button class="navbar-toggler px-4"
+        	    type="button" onclick="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="d-flex justify-content-center">        
+          <a href="http://vlab.co.in" class="navbar-brand">
+            <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo">
+          </a>
+        </div>
+        
+        <div id="headerNavbar" class="border-top flex-grow-1 d-flex align-items-center">
+          <ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in">HOME</a>
+            </li>
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in/participating-institutes">PARTNERS</a>
+            </li>
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in/contact-us">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+      <div class="row flex-grow-1 px-4 d-flex flex-nowrap">
+        <div class="nav flex-column sidebar flex-shrink-0" id="menu">
+            <div>
+              <div class="d-flex">
+                <a href="index.html" class="p-2 ">
+                  Aim
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="theory.html" class="p-2  current-item ">
+                  Theory
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="pretest.html" class="p-2 ">
+                  Pretest
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="procedure.html" class="p-2 ">
+                  Procedure
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="simulation.html" class="p-2 ">
+                  Simulation
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="posttest.html" class="p-2 ">
+                  Posttest
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="references.html" class="p-2 ">
+                  References
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="feedback.html" class="p-2 ">
+                  Feedback
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+        </div>        <div class="vlabs-page-content px-4 pb-4 flex-grow-1 markdown-body">
+          <div class="text-center">
+            <p>Control Valve</p>
+        
+          </div>
+            <h3 id="before-performing-the-practical-on-control-valve-one-must-be-well-versed-with">Before performing the practical on control valve one must be well versed with:</h3>
+        <ul>
+        <li>Basics of flow theory including Bernoulli&#39;s equation.</li>
+        <li>Pneumatic system components</li>
+        <li>Controller theory</li>
+        </ul>
+        <h2 id="1-identify-various-compoments-of-a-pneumatically-operated-control-valve">1) Identify various compoments of a pneumatically operated control valve.</h2>
+        <p>In today&#39;s modern plants, processes are controlled to achieve desired objectives. Control can either be manual or automatic. Manual control involves human intervention and entails human efforts and causes errors whereas in automatic control, no human intervention is required rather sensor, controller and control valve are used to automatically control a system to force the system parameters to desired levels.</p>
+        <p>Control valve is final control element in the control loop which exerts direct influence on the process. This element accepts input from the controller then transferred it to some proportional operation performed on the process. A valve controls system or process fluid flow and pressure by performing any of the following functions:</p>
+        <ul>
+        <li>Stopping and starting fluid flow</li>
+        <li>Varying (throttling) the amount of fluid flow</li>
+        <li>Controlling the direction of fluid flow</li>
+        <li>Regulating downstream system or process pressure</li>
+        <li>Relieving component or piping over pressure</li>
+        </ul>
+        <p>The control valve have basic components like valve body, bonnet, stem, actuator, valve plug and seat.</p>
+        <h3 id="valve-body">Valve body</h3>
+        <p>A housing for internal parts having inlet and outlet flow connections. The body, sometimes called the shell, is the primary pressure boundary of a valve. It serves as the principal element of a valve assembly because it is the framework that holds everything together. Valve bodies are cast or forged into variety of shapes. Sphere or a cylinder would theoretically be the most economical shape to resist fluid pressure when a valve is open.</p>
+        <center><img src="images/img1.jpg" title="" /><img src="images/img2.jpg" title="" /></center>
+        
+        <h3 id="bonnet">Bonnet</h3>
+        <p>The bonnet enclosed the valve plug in the valve body. Some bonnets function simply as valve covers, while others support valve internals and accessories such as the stem, disk, and actuator. The bonnet is the second principal pressure boundary of a valve. It is cast or forged of the same material as the body and is connected to the body by a threaded, bolted, or welded joint.</p>
+        <center><img src="images/img3.jpg" title="" /><img src="images/img4.jpg" title="" /></center>
+        
+        <h3 id="valve-actuator">Valve actuator</h3>
+        <p>A valve actuator is a mechanical device that uses a power source to operate a valve. This power source can be electric, pneumatic (compressed air), or hydraulic (the flow of oil). The actuator operates the stem and disk assembly. Except for certain hydraulically controlled valves, actuators are outside of the pressure boundary.</p>
+        <center><img src="images/img5.jpg" title="" /><img src="images/img6.jpg" title="" /></center>
+        
+        <h3 id="plug-or-disk">Plug or disk</h3>
+        <p>A valve plug is movable part which provides a variable opening in a port and provides capability for permitting and prohibiting fluid flow. When the plug is closed, full system pressure is applied across it if the outlet side is depressurized. For this reason, the plug is a pressure-retaining part. The disk or plug is the third primary principal pressure boundary.</p>
+        <center><img src="images/img7.jpg" title="" /><img src="images/img8.jpg" title="" /></center>
+        
+        <h3 id="seat-or-seal-ring">Seat or seal ring</h3>
+        <p>The seat provide the seating surface for the disk/plug, comes in contact with the valve plug to seal the valve tight during close position. In some designs, the body is machined to serve as the seating surface and seal rings are not used. In other designs, forged seal rings are threaded or welded to the body to provide the seating surface.</p>
+        <center><img src="images/img9.jpg" title="" /><img src="images/img10.jpg" title="" /></center>
+        
+        <h3 id="stem">Stem</h3>
+        <p>The seat provide the seating surface for the disk/plug, comes in contact with the valve plug to seal the valve tight during close position. In some designs, the body is machined to serve as the seating surface and seal rings are not used. In other designs, forged seal rings are threaded or welded to the body to provide the seating surface.</p>
+        <center><img src="images/img11.jpg" title="" /><img src="images/img12.jpg" title="" /></center>
+        
+        <h2 id="2-explain-various-terminologies-used-while-selecting-a-control-valve">2) Explain various terminologies used while selecting a control valve.</h2>
+        <p>In the application of control valve, many terminologies are used that may sometimes sound confusing and ambiguous. Here are some common terms to aid understanding of the application of control valve.</p>
+        <h3 id="flow-coefficient-cv">Flow coefficient Cv</h3>
+        <p>Flow coefficient Cv: The valve flow coefficient or valve flow capacity. Cv is the water flow rate, in gallons per minute, that causes a one psi pressure drop across a fully open valve.</p>
+        <h3 id="head-pressure">Head pressure</h3>
+        <p>Head pressure: The maximum pressure a pump can exert in a piping system, usually indicated in feet of water units. The significance is that the valve.</p>
+        <h3 id="valve-fail-mode">Valve fail mode</h3>
+        <p>Valve fail mode: This is the position to which the control valve closure member moves when actuating energy source fails.</p>
+        <ul>
+        <li>Fail to open: A condition where the valve closure member moves to an open position when actuating energy source fails.</li>
+        <li>Fail to close: A condition where the valve closure member moves to closed position when actuating energy source fails.</li>
+        <li>Fail in place: A condition where the valve closure stays in its last position when actuating energy source fails.</li>
+        </ul>
+        <h3 id="capacity">Capacity</h3>
+        <p>Capacity: The rate of flow through a valve under stated test conditions.</p>
+        <h3 id="control-valve-gain">Control valve gain</h3>
+        <p>Control valve gain: The change in the flow rate as a function of the change in valve travel.</p>
+        <h3 id="hysteresis">Hysteresis</h3>
+        <p>Hysteresis: The maximum difference in output value for any single input value during a calibration cycle, excluding errors due to dead band.</p>
+        <h3 id="dead-band">Dead band</h3>
+        <p>Dead band: The range through which an input can be varied without initiating an observable response.</p>
+        <h3 id="rangeability">Rangeability</h3>
+        <p>Rangeability: The Ratio of maximum valve flow capacity to minimum controllable flow capacity.</p>
+        <h3 id="linear-flow">Linear flow</h3>
+        <p>Linear flow: A flow characteristic that controls flow linearly to the actuator stroke. This is commonly used for two-position control and some quick opening applications</p>
+        <h3 id="equal-percentage">Equal percentage</h3>
+        <p>Equal percentage: A flow characteristic which controls flow exponentially (non-linear) compared to the actuator stoke</p>
+        <h3 id="throttling">Throttling</h3>
+        <p>Throttling: The action of a control valve to regulate fluid flow by varying the position of the closure member and it causes variable pressure drop.</p>
+        <h3 id="cavitation">Cavitation</h3>
+        <p>Cavitation: Cavitation occurs when the pressure of a flowing liquid falls below the liquid&#39;s vapor pressure, vaporization occurs and bubbles form. As the pressure recovers bubbles collapse suddenly. This transformation can damage valve and piping surfaces.</p>
+        <h3 id="flashing">Flashing</h3>
+        <p>Flashing: Flashing occurs in the liquid flow when the internal pressure of the liquid falls below the vapor pressure and remains below it. During this phase vapor bubbles form and flow with the liquid downstream at increased velocities and this causes erosion to valves and piping.</p>
+        <h3 id="valve-travel">Valve travel</h3>
+        <p>Valve travel: Valve travel is the movement of closure member from the closed position to an intermediate or rated full position.</p>
+        <h3 id="liquid-pressure-recovery-factor-fl">Liquid pressure recovery factor (FL)</h3>
+        <p>Liquid pressure recovery factor (FL): It is the ratio of valve coefficient (Cv) based on the pressure at the vena contracta, to the usual flow coefficient (Cv) which is based on overall pressure drop across the valve in non vaporizing liquid service.</p>
+        <h2 id="3-calculate-the-parameters-required-for-sizing-of-a-pneumatically-operated-control-valve">3) Calculate the parameters required for sizing of a pneumatically operated control valve.</h2>
+        <p>The successful operation of process plant and systems involves the highest level of measurement and control performance. Control valves therefore perform a key function in this process. A correctly sized control valve can increase process availability, reduce process variability and reduce maintenance costs. Careful consideration should therefore be given to the correct sizing of system control valves. Control valve sizing procedures are based on accepted mathematical methods such as those detailed in ISA-75.01.01-2007 a Flow Equations for Sizing Control Valves.</p>
+        <p>In the following sections, the nomenclature and procedures for control valve sizing for different flow mediums are explained.</p>
+        <h3 id="sizing-valves-for-liquids">Sizing Valves for Liquids</h3>
+        <p>Following is a step-by-step procedure for the sizing of control valves for liquid flow using the IEC procedure. Each of these steps is important and must be considered during any valve sizing procedure.</p>
+        <h3 id="1-specify-the-required-parameters-to-size-the-valve-as-follows">1. Specify the required parameters to size the valve as follows.</h3>
+        <ul>
+        <li>Process fluid: water, oil, etc.</li>
+        <li>Appropriate service conditions: q, P1, P2 or <img src="images/img25.jpg" title="" />, T1, Gf, Pv, Pc, and <img src="images/img13.jpg" title="" /></li>
+        </ul>
+        <center><img src="images/img14.jpg" title="" /></center>
+        
+        <h3 id="2-determine-the-equation-constant-n">2. Determine the equation constant N</h3>
+        <p>N is a numerical constant contained in each of the flow equations for using different systems of units. e.g Use N1, if sizing the valve for a flow rate in volumetric units (gpm or m^3/h).(See table 2 equation constant)</p>
+        <center><img src="images/img15.jpg" title="" /></center>
+        
+        <h3 id="3-determine-fp-the-piping-geometry-factor">3. Determine FP, the piping geometry factor.</h3>
+        <p>FP is a correction factor that accounts for pressure losses due to piping fittings such as reducers, elbows, or tees that might be attached directly to the inlet and outlet connections of the control valve to be sized.</p>
+        <center><img src="images/img16.jpg" title="" /></center>
+        
+        <ul>
+        <li>If such fittings are attached to the valve, the FP factor must be considered in the sizing procedure and calculate using following equation.
+        where,</li>
+        </ul>
+        <img src="images/img17.jpg" title="" />
+        
+        <ul>
+        <li>If no fittings are attached to the valve, FP has a value of 1.</li>
+        </ul>
+        <h3 id="4-determine--the-allowable-sizing-pressure-drop">4. Determine <img src="images/img23.jpg" title="" /> (the allowable sizing pressure drop).</h3>
+        <p><img src="images/img18.jpg" title="" />(the allowable sizing pressure drop) can be determined from the following relationships:</p>
+        <ul>
+        <li>For valves installed without fittings:</li>
+        </ul>
+        <center><img src="images/img19.jpg" title="" /></center>
+        
+        <ul>
+        <li>For valves installed with fittings attached:</li>
+        </ul>
+        <center><img src="images/img20.jpg" title="" /></center>
+        
+        <ul>
+        <li>P1 = Upstream absolute static pressure</li>
+        <li>P2 = Downstream absolute static pressure</li>
+        <li>Pv = Absolute vapor pressure at inlet temperature</li>
+        <li>FF = liquid critical pressure ratio factor</li>
+        <li>FL = Select from flow coefficient table</li>
+        </ul>
+        <p>Calculated <img src="images/img23.jpg" title="" /> compare with actual service pressure differential i.e <img src="images/img21.jpg" title="" /></p>
+        <ul>
+        <li><p>If <img src="images/img22.jpg" title="" />, choked flow conditions will exist under the service conditions specified then step 6 of the procedure for Sizing valves for liquids must be modified by replacing the actual service pressure differential (i.e., P1 - P2) in the appropriate valve sizing equation with the calculated <img src="images/img23.jpg" title="" /> value.</p>
+        </li>
+        <li><p>If <img src="images/img24.jpg" title="" />, flow will not be chocked under the service conditions specified then in the step 6 of the procedure for Sizing valves for liquids must be calculated with actual pressure drop i.e <img src="images/img25.jpg" title="" />.</p>
+        </li>
+        </ul>
+        <h3 id="5-determine-fr-the-reynolds-number-factor">5. Determine FR, the Reynolds number factor.</h3>
+        <p>FR is a correction factor to account for non turbulent flowing conditions within the control valve to be sized. For most valve sizing applications, non turbulent flow will not occur.</p>
+        <ul>
+        <li>If it is known that non turbulent flow conditions will not develop within the valve, FR has a value of 1.0.</li>
+        <li>If the non turbulent flow condition occurs use the equation of Reynolds number. where,</li>
+        </ul>
+        <img src="images/img26.jpg" title="" />
+        
+        <ul>
+        <li>N2, N4 = Numerical constants determined from table 2</li>
+        <li>D = Internal diameter of the piping</li>
+        <li><img src="images/img27.jpg" title="" /> = Kinematic viscosity of the fluid</li>
+        <li>Cv= Cvt, the pseudo sizing coefficient</li>
+        </ul>
+        <img src="images/img28.jpg" title="" />
+        
+        <ul>
+        <li>If Rev is less than 56, the flow is laminar, and FR can be found using equation: <img src="images/img29.jpg" title="" /></li>
+        <li>If Rev is greater than 40,000, the flow can be taken as turbulent, and FR= 1.0.</li>
+        <li>If Rev lies between 56 and 40,000, the flow is transitional, and FR can be found by using standard table.</li>
+        </ul>
+        <h3 id="6-solve-for-required-cv-using-the-appropriate-equation">6. Solve for required Cv, using the appropriate equation:</h3>
+        <ul>
+        <li><p>For volumetric flow rate units</p>
+        <img src="images/img30.jpg" title="" />
+        </li>
+        <li><p>For mass flow rate units-    </p>
+        <img src="images/img31.jpg" title="" />
+        
+        </li>
+        </ul>
+        <h3 id="7-select-the-valve-size-using-the-flow-coefficient-table-and-the-calculated-cv-value">7. Select the valve size using the flow coefficient table and the calculated Cv value.</h3>
+        <h2 id="sizing-valves-for-compressible-fluids">Sizing Valves for compressible fluids:</h2>
+        <h3 id="1-specify-the-required-parameters-to-size-the-valve-as-follows-1">1. Specify the required parameters to size the valve as follows.</h3>
+        <ul>
+        <li>Process fluid: air, natural gas, steam etc.</li>
+        <li>Appropriate service conditions: q or w, P1, P2 or <img src="images/img32.jpg" title="" />, T1, Gg, M, k,z and <img src="images/img33.jpg" title="" /> (abbreviations are given in the table no 1)</li>
+        </ul>
+        <center><img src="images/img34.jpg" title="" /></center>
+        
+        <h3 id="2-determine-the-equation-constant-n-1">2. Determine the equation constant N:</h3>
+        <p>N is a numerical constant contained in each of the flow equations for using different systems of units.</p>
+        <p>Use either N7 or N9 if sizing the valve for a flow rate in volumetric units (i.e. scfh or m^3/h). Which of the two constants to use depends upon the specified service conditions, N7 can be used only if the specific gravity, Gg, of the flowing gas has been specified. N9 can be used only if the molecular weight, M, of the gas has been specified.
+        Use either N6 or N8 if sizing the valve for a flow rate in mass units (i.e.,lb/h or kg/h). Which of the two constants to use depends upon the specified service conditions, N6 can be used only if the specific weight, <img src="images/img35.jpg" title="" /> of the flowing gas has been specified.N8 can be used only if the molecular weight, M, of the gas has been specified.</p>
+        <center><img src="images/img36.jpg" title="" /></center>
+        
+        <h3 id="3-determine-fp-the-piping-geometry-factor-1">3. Determine FP, the piping geometry factor.</h3>
+        <p>FP is a correction factor that accounts for pressure losses due to piping fittings such as reducers, elbows, or tees that might be attached directly to the inlet and outlet connections of the control valve to be sized. If such fittings are attached to the valve, the Fp factor must be considered in the sizing procedure. If no fittings are attached to the valve, FP has a value of 1.</p>
+        <h3 id="4-determine-y-the-expansion-factor">4. Determine Y, the expansion factor.</h3>
+        <p>where,</p>
+        <ul>
+        <li>Fk = k/1.4 the ratio of specific heats factor</li>
+        <li>k = Ratio of specific heats</li>
+        <li>x = P/P1, the pressure drop ratio</li>
+        <li>XT = The pressure drop ratio factor for valves installed without attached fittings.</li>
+        <li>When value of x become equal to or exceed the appropriate value of the product of either Fk XT or Fk XT P at which point: Y = 0.667</li>
+        </ul>
+        <h3 id="5-solve-for-the-required-cv-using-the-appropriate-equation">5. Solve for the required Cv using the appropriate equation:</h3>
+        <ul>
+        <li><p>For volumetric flow rate units</p>
+        <ul>
+        <li><p>If the specific gravity, Gg, of the gas has been specified:</p>
+        <img src="images/img37.jpg" title="" />
+        </li>
+        <li><p>If the molecular weight, M, of the gas has been specified:</p>
+        <img src="images/img38.jpg" title="" />
+        </li>
+        </ul>
+        </li>
+        <li><p>For mass flow rate units-</p>
+        <ul>
+        <li><p>If the specific weight of the gas has been specified:</p>
+        <img src="images/img39.jpg" title="" />
+        </li>
+        <li><p>If the molecular weight, M, of the gas has been specified:</p>
+        <img src="images/img40.jpg" title="" />
+        
+        </li>
+        </ul>
+        </li>
+        </ul>
+        <h3 id="6-select-the-valve-size-using-the-appropriate-flow-coefficient-table-and-the-calculated-cv-value">6. Select the valve size using the appropriate flow coefficient table and the calculated Cv value.</h3>
+        <h2 id="4-assemble-a-pneumatically-operated-control-valve-from-the-loose-components-stored-in-library">4) Assemble a pneumatically operated control valve from the loose components stored in library.</h2>
+        <p>Control valve is the final control element in the system and used in conjunction with an actuator or actuation system along with other main components like valve body, bonnet, plug, stem etc.</p>
+        <h3 id="actuator">Actuator</h3>
+        <p>An actuator is an assembly of diaphragm, spring and actuator stem fitted to the control valve to provide power for movable parts like plug, ball or disk. The actuator accepts signal from the control system and moves the valve plug to fully open or close position or an intermediate position. Actuator can be classified in different ways like types of drive power and direction of movement of stem.</p>
+        <h3 id="types-of-actuator">Types of actuator</h3>
+        <p>Three principal types of actuator drive powers like:</p>
+        <ul>
+        <li>Pneumatic</li>
+        <li>Hydraulic</li>
+        <li>Electric</li>
+        </ul>
+        <p>Pneumatically operated diaphragm actuators use air supply from controller, positioner or any other source. Pneumatic action can be accomplished in two ways:</p>
+        <ul>
+        <li>Direct acting</li>
+        <li>Reverse acting</li>
+        </ul>
+        <h4 id="direct-acting">Direct acting:</h4>
+        <p>In this type of actuator, air pressure pushes down the diaphragm and extends the actuator stem to close the valve. When air pressure released, the stem is retracted by the compression spring.</p>
+        <h4 id="reverse-acting">Reverse acting:</h4>
+        <p>Here air pressure pushes up the diaphragm and pulls up the actuator stem to open the valve. When air pressure released, the stem is pushed down by the compression spring.
+        Diaphragm actuator: Diaphragm actuator works on the principle of gauge pressure i. e difference between input pressure signal and atmospheric pressure. P=F*A Where,
+        P = Pressure difference
+        A = Diaphragm area
+        F = Force</p>
+        <p>Diaphragm actuator consists of a diaphragm made of rubber and is sandwiched between two circular steel discs. The diaphragm is mounted in upper chamber where the varying pressure from controller is applied.
+        The bottom chamber contains a spring that forcing the diaphragm and connected to shaft down against the spring force.</p>
+        <p>As shown in the figure spring and diaphragm pneumatic actuators is &#39;direct-acting&#39;, meaning that air to the diaphragm casing pushes the actuator stem downward. This &#39;air-to-close&#39; action compresses the spring, which in turn pushes the actuator stem back up when the supply pressure is decreased.</p>
+        <center><img src="images/img41.jpg" title="" /><img src="images/img42.jpg" title="" /></center>
+        
+        <h3 id="valve-body-1">Valve body</h3>
+        <p>The valve body contains orifice and is the main housing through which the fluid flows. It has direct connection to the flow and pipeline therefore the size and material must be chosen accordingly. It serves as the principal element of a valve assembly because it is the framework that holds everything together. There are few types of valve body structure like:</p>
+        <ul>
+        <li>Single ported: 1 plug with 1 seat</li>
+        <li>Double ported: 2 plug with 2 port</li>
+        <li>Two way valve</li>
+        <li>Three way valve</li>
+        </ul>
+        <center><img src="images/img43.jpg" title="" /><img src="images/img44.jpg" title="" /></center>
+        
+        <h3 id="bonnet-1">Bonnet</h3>
+        <p>The Bonnet is an assembly that provides a mounting for the actuator and a guide through which the stem must pass. It serves as the mounting base for the actuator. It is composed of the centerpiece, packing, packing guide, and packing nut. The packing provides a seal between the stem and bonnet to prevent leakage. The bonnet is connected with the body by a threaded, bolted, or welded joint connections - and gaskets are used in between the body and the bonnet. Control valves are fitted with following types of bonnets</p>
+        <ul>
+        <li>standard bonnet</li>
+        <li>extension bonnet</li>
+        <li>bellow seal bonnet</li>
+        </ul>
+        <p>The basic criterion in selection of bonnet is fluid temperature. Extension bonnets are used in both high and low temperatures. Bellow seal bonnets ensure absolute internal tightness and they are used mostly for aggressive media. Standard bellow seal bonnets can be used up to pressure 35 bar.</p>
+        <center><img src="images/img45.jpg" title="" /><img src="images/img46.jpg" title="" /></center>
+        
+        <h3 id="plugdisk">Plug/disk</h3>
+        <p>The shape of the valve plug determines the flow characteristics of the valve. The most efficient valve is one with linear flow characteristic hence efforts are made during the valve sizing process to approximate as possible to a linear flow characteristic. The typical design of equal percentage, linear and quick opening valve plugs shown below</p>
+        <center><img src="images/img47.jpg" title="" /></center>
+        
+        <p>The percent of flow through the valve is plotted against valve stem position. The curves shown are typical of those available from valve manufacturers. These curves are based on constant pressure drop across the valve and are called inherent flow characteristics.</p>
+        <center><img src="images/img48.jpg" title="" /></center>
+        
+        <ul>
+        <li>Linear - flow capacity increases linearly with valve travel.</li>
+        <li>Equal percentage - flow capacity increases exponentially with valve trim travel. Equal increments of valve travel produce equal percentage changes in the existing Cv.</li>
+        <li>Quick opening - provides large changes in flow for very small changes in lift. It usually has too high a valve gain for use in modulating control. So it is limited to on-off service, such as sequential operation in either batch or semi-continuous processes.</li>
+        </ul>
+        <h3 id="stem-1">Stem</h3>
+        <p>The stem of a valve is used to open or close the valve because it moves the disc/plug inside the valve. The stem is linked to the valve actuator at one end and is connected to the valve disc/plug on the other end. Stems are typically forged and connected to the disk by threaded or welded joints. To prevent the leakages of the valve, a proper finish of the stem surface is necessary. There are different types of stems like rotary, sliding, rising stem with outside screw and yoke, rising stem with inside screw and non-rising stem with inside screw.</p>
+        <h3 id="packing">Packing</h3>
+        <p>The selection of stem (or shaft) packing for a control valve must be done taking into account very important factors such as</p>
+        <ul>
+        <li>Temperature of process fluid</li>
+        <li>Characteristics of fluid</li>
+        <li>Working pressure</li>
+        </ul>
+        <p>The gasket that seals the stem with the bonnet is called packing and it comprises may components like gland which is type of bushing compresses the packing by a gland onto the stuffing. Stuffing box is a chamber in which the packing gets compressed. A backseat is a seating inside the bonnet. The back seat provides a seal between the stem and bonnet and prevents system pressure from building against the valve packing once the valve is fully open. The valve packaging shall be properly designed and manufactured to minimize the possible damages to the stem and minimize the risk of leakages of fluids whereas it is necessary to observe that a too tight packing may affect the stem.</p>
+        <center><img src="images/img49.jpg" title="" /></center>
+        
+        <h3 id="positioner">Positioner</h3>
+        <p>A valve Positioner is a device used to increase or decrease the air load pressure driving the actuator until the valve&#39;s stem reaches a required position balanced to the output signal from the process variable instrument controller and it is used where accurate and rapid control is required without error or hysteresis.</p>
+        <p>The valve positioner is a force-balanced instrument, with pneumatic module installed on a double-acting actuator for air to open action. Positioning is based on a balance of two forces; one proportional to the instrument signal and the other proportional to the stem position.</p>
+        <center><img src="images/img50.jpg" title="" /></center>
+        
+        <p>The input pressure from the controller (3 to 15 psi) to the bellows falls. The flapper moves away from the nozzle and the pressure after the orifice falls. The pressure to the diaphragm falls and the valve begins to close. The feedback arm moves up rotating the cam clockwise. This raises the beam increasing back pressure in the nozzle until equilibrium is again achieved. The change over cock allows the signal from the controller to be placed directly on the diaphragm.</p>
+        <h2 id="5-design-a-diaphragm-actuator-and-control-valve-for-the-described-application">5) Design a diaphragm actuator and control valve for the described application.</h2>
+        <p>A valve actuator is device used to open or close by pneumatic, hydraulic or electric source.</p>
+        <p>Some of the basic functions of valve actuator like:</p>
+        <ul>
+        <li>Provide enough thrust to operate the valve</li>
+        <li>Hold the valve plug/disc/ball at required position</li>
+        <li>Operate the valve through its full travel at rated speed</li>
+        <li>Provide fail safe mode in the event of power failure</li>
+        <li>Prevent excessive forces under unfavorable conditions</li>
+        </ul>
+        <p>In the diaphragm actuator opening, closing and throttling of the valve plug is accomplished by varying the air pressure to the diaphragm. Typically the control pressure signal is 3 to 15 psig. There are two types of actuators: Air-To-Close and Air-To-Open.</p>
+        <p>that a too tight packing may affect the stem.</p>
+        <center><img src="images/img51.jpg" title="" /></center>
+        
+        <p>In Air-To-Close actuators, as the pressure signal is increased, the diaphragm pushes down, moving the stem and plug down, and compressing the range spring. As the pressure signal is decreased, the range spring pushes the diaphragm up, moving the valve stem and plug up.</p>
+        <h3 id="diaphragm-actuator-sizing">Diaphragm actuator sizing</h3>
+        <p>This actuator is ideal for use on valve requiring linear travel. While selecting actuator following parameters must be considered</p>
+        <ul>
+        <li>Valve type and size</li>
+        <li>Pressure drop</li>
+        <li>Services and operating condition</li>
+        <li>Flow medium</li>
+        <li>Fail safe operation</li>
+        <li>Operating temperature</li>
+        <li>Stem orientation</li>
+        <li>Type of control</li>
+        </ul>
+        <h3 id="the-steady-state-equation">The steady state equation</h3>
+        <p>In the spring and diaphragm actuator stem positioning is achieved by a balance of forces acting on the stem. These forces are due to pressure on the diaphragm, spring travel and fluid forces on the valve plug. PA - KX - PvAv = 0</p>
+        <p>This equation is the summation of forces on the valve plug adopting the positive direction downward. Where A is effective diaphragm area, Av is the effective inner valve area, K is the spring rate, P is the diaphragm pressure, Pv is the valve pressure drop and X is the stem travel. This equation is applicable to air to close actuator and valve combination with flow under the plug. This type of actuator is commonly referred to as direct acting. In this equation friction and inertia are not considered. Friction occurs in the valve stem packing, in the actuator stem guide and in the valve plug guide. With considering the plug forces due to fluid flow, additional actuator force is required to maintain balance. The actuator pressure required to begin stem motion.</p>
+        <h2 id="6-investigate-the-reasons-for-the-malfunctioning-of-the-valve-under-test">6) Investigate the reasons for the malfunctioning of the valve under test.</h2>
+        
+        </div>
+      </div>
+    </div>
+    <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+      <div class="row px-5">
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+          <a href="http://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+          <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+          <a href="http://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+          <span> Phone: General Information: 011-26582050 </span>
+          <span> Email: support@vlabs.ac.in </span>
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+          <div class="social-links">
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+    	  <i class="fa fa-twitter"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+    	  <i class="fa fa-facebook"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+    	  <i class="fa fa-youtube"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+    	  <i class="fa fa-linkedin"></i>
+    	</a>
+          </div>
+        </div>
+      </div>
+      <div class="m-0 py-2 text-center" style='font-family: "Open Sans", sans-serif; background: #212121;'>
+        <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+        &nbsp;&amp;&nbsp;
+        <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+      </div>
+    </footer>
+
+      <script src="./assets/js/toggleSidebar.js"></script>
+      
+  </body>
+</html>
